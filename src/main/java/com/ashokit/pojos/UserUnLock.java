@@ -7,6 +7,6 @@ public class UserUnLock {
 
 	private String email;
 	private String tempPassword;
-	private String password;
+	private String changepassword;
 	private String confirmPassword;
 }

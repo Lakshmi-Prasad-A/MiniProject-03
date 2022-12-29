@@ -23,7 +23,7 @@ public class City {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int citId;
+	private int cityId;
 	private String cityName;
 	
 	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)

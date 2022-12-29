@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Users {
+public class User {
 
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
@@ -37,8 +37,6 @@ public class Users {
 	private String state;
 	private String city;
 	private String password;
-	@Column(name = "Tem_Password")
-	private String tempPassword;
 	private boolean isUserActive;
 
 }
