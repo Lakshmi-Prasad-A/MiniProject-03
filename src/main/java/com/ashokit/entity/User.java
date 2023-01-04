@@ -1,5 +1,6 @@
 package com.ashokit.entity;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -8,8 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -30,13 +30,13 @@ public class User {
 	private String lastName;
 	private String email;
 	private Long phoneNumber;
-	@Temporal(TemporalType.DATE)
-	private Date dob;
+	private LocalDate dob;
 	private String gender;
-	private String country;
-	private String state;
-	private String city;
-	private String password;
-	private boolean isUserActive;
+	private String countryId;
+	private String stateId;
+	private String cityId;
+	private String accStatus;
+	private String userPwd;
+	
 
 }

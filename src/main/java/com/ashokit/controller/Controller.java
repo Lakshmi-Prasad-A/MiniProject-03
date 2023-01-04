@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ashokit.entity.User;
+import com.ashokit.pojos.UserForm;
 import com.ashokit.pojos.UserLogin;
 import com.ashokit.pojos.UserUnLock;
 import com.ashokit.service.UserMgmtService;
@@ -41,8 +42,8 @@ public class Controller {
 	}
 	
 	@PostMapping(value = "/signup")
-	public String registerUser(User user) {
-		return service.registerUser(user);
+	public String registerUser(UserForm userform) {
+		return service.registerUser(userform);
 	}
 	
 	@PostMapping("/unlockuser")
